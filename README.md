@@ -14,6 +14,10 @@ This is a web application built on Angular that enables users to type in a usern
 
 ## Code scaffolding
 
+### Live link:
+
+https://jacobrugano.github.io/git-searches/
+
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## TECHNOLOGIES USED
