@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core'; 
+import { SearchGithubService } from '../search-github.service';
+import { NgForm } from '@angular/forms';
+import { User } from '../user'; 
 
 @Component({
-  selector: 'app-gitsearch-results',
-  templateUrl: './gitsearch-results.component.html',
-  styleUrls: ['./gitsearch-results.component.css']
+  selector: 'app-git-search-results',
+  templateUrl: './git-search-results.component.html',
+  styleUrls: ['./git-search-results.component.css']
 })
-export class GitsearchResultsComponent implements OnInit {
 
-  constructor() { }
+export class GitSearchResultsComponent implements OnInit {
 
-  ngOnInit(): void {
-  }
+    user:User; 
+    repoDetails = []; 
+    searchGithubService:SearchGithubService; 
+    hideInput:boolean;
+
 
 }
