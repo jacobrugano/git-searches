@@ -16,5 +16,12 @@ export class GitSearchResultsComponent implements OnInit {
     searchGithubService:SearchGithubService; 
     hideInput:boolean;
 
+   
+  	constructor(searchGithubService:SearchGithubService) { 
+      this.searchGithubService = searchGithubService;
+    }
+
+    @Output() toggleBack = new EventEmitter();
+
 
 }
