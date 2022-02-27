@@ -20,6 +20,11 @@ export class GitFormComponent implements OnInit {
 
 
 
+  // We first import the service SearchGithubService class.Then inject the service into our Component’s constructor and we assign it to an searchGithubService property
+	constructor(searchGithubService:SearchGithubService) { 
+		this.searchGithubService = searchGithubService;
+	}
+
 	ngOnInit() {
 	}
 
