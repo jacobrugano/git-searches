@@ -18,6 +18,11 @@ export class GitFormComponent implements OnInit {
   public showData = false; // Assign showData boolean value false
 
 
+	submitUsername() {
+		this.searchGithubService.getUserData(this.username); // Passing the username entered as an arguement to getUserData function in our service then fed to the API for a response if the user exists
+    this.showInput = false;
+    this.showData = true;
+	}
 
 
   // We first import the service SearchGithubService class.Then inject the service into our Component’s constructor and we assign it to an searchGithubService property
