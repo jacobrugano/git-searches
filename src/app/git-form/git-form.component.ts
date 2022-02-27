@@ -11,6 +11,15 @@ import { User } from '../user'; // Imported the User blueprint class in src/app/
 })
 export class GitFormComponent implements OnInit {
 
+  user:User;
+	username: string; // Gotten from the form username input
+	searchGithubService:SearchGithubService; // Declare the searchGithubService which is of type SearchGithubService we imported from src/app/search-github.service  
+  public showInput = true; // Assign showInput boolean value true
+  public showData = false; // Assign showData boolean value false
+
+
+
+
 	ngOnInit() {
 	}
 
