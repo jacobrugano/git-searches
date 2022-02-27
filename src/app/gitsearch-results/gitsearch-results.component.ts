@@ -23,5 +23,14 @@ export class GitSearchResultsComponent implements OnInit {
 
     @Output() toggleBack = new EventEmitter();
 
+    goBack(){
+      this.hideInput = true;
+      this.toggleBack.emit(this.hideInput);
+    }
+
+  	ngOnInit() {
+  		this.user = this.searchGithubService.user; 
+      this.repoDetails = this.searchGithubService.repoData; 
+  	}
 
 }
